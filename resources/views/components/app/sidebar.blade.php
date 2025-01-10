@@ -79,6 +79,11 @@
             Politicas de Privacidad
           </x-menu.item>
 
+          <x-menu.item id="terminos-y-condiciones" href="{{ route('terminos-y-condiciones.edit', 1) }}"
+            icon="fas fa-undo-alt">
+            Terminos y condiciones
+          </x-menu.item>
+
           <x-menu.item id="homeview" href="{{ route('homeview.edit', 1) }}" icon="fas fa-address-card">
             Textos - Home
           </x-menu.item>

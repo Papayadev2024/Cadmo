@@ -85,10 +85,10 @@ Route::get('/post/{id}', [IndexController::class, 'detalleBlog'])->name('detalle
 
 
 /* Proceso de pago */
-Route::get('/carrito', [IndexController::class, 'carrito'])->name('carrito');
-Route::get('/pago', [IndexController::class, 'pago'])->name('pago');
-Route::post('/procesar/pago', [IndexController::class, 'procesarPago'])->name('procesar.pago');
-Route::post('/agradecimiento', [IndexController::class, 'agradecimiento'])->name('agradecimiento');
+// Route::get('/carrito', [IndexController::class, 'carrito'])->name('carrito');
+// Route::get('/pago', [IndexController::class, 'pago'])->name('pago');
+// Route::post('/procesar/pago', [IndexController::class, 'procesarPago'])->name('procesar.pago');
+// Route::post('/agradecimiento', [IndexController::class, 'agradecimiento'])->name('agradecimiento');
 /* Catálogo y producto */
 Route::get('/producto/{id}', [IndexController::class, 'producto'])->name('producto');
 Route::get('/catalogo/{filtro}', [IndexController::class, 'catalogo'])->name('catalogo');
