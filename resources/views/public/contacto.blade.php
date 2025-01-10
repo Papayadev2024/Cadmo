@@ -137,7 +137,7 @@
                         
                                 <div class="flex flex-col justify-center gap-5 rounded-xl">
                                     <h2 class="leading-tight font-gotham_medium text-4xl text-[#0181AA]">
-                                        Todo FAQs</h2>
+                                        Preguntas Frecuentes</h2>
                                     <div class="h-[3px] bg-[#0181AA] w-32 rounded-full -mt-2"> </div>   
                             
                                     <div class="font-poppins">

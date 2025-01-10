@@ -316,15 +316,13 @@
 
                     <div class="flex flex-col justify-start gap-5 w-full  col-span-2">
                         <h2 class="leading-tight font-gotham_medium  text-4xl  text-[#0181AA] ">
-                            Necesitas ayuda?</h2>
+                            {{$textoproducto->title2section ?? "Ingrese un texto"}}</h2>
                         <div class="h-[3px] bg-[#0181AA] w-32 rounded-full -mt-2"> </div>
                         <p class="text-[#02324A] font-gotham_book font-normal text-lg">
-                            Donec non velit non elit euismod varius eu id tellus. Nunc ultrices mauris quis facilisis sollicitudin. 
-                            Vestibulum convallis diam et nulla aliquet fringilla eget ut massa. Proin ac consequat neque. 
-                            Pellentesque arcu nisi, bibendum eget gravida sed, condimentum id nulla.</p>
+                            {{$textoproducto->description2section ?? "Ingrese un texto"}}</p>
                         <div
                             class="py-3 rounded-3xl bg-[#11355A] flex flex-row w-48 justify-center items-center gap-2 mt-5">
-                            <a class="text-white font-gotham_medium tracking-wider text-center">Contactarme</a>
+                            <a href="{{route('contacto')}}" class="text-white font-gotham_medium tracking-wider text-center">Contactarme</a>
                             <img src="{{ asset('images/svg/flechaderecha.svg') }}" />
                         </div>
                     </div>

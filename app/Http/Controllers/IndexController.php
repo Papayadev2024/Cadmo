@@ -539,7 +539,7 @@ class IndexController extends Controller
     {
         
         $producto = Products::where('id', '=', $id)->first();
-
+        $textoproducto = ProductosView::first();
         $meta_title = $producto->meta_title ?? $producto->producto;
         $meta_description = $producto->meta_description  ?? Str::limit(strip_tags($producto->description), 160);
         $meta_keywords = $producto->meta_keywords ?? '';
@@ -586,7 +586,7 @@ class IndexController extends Controller
 
         $url_env = $_ENV['APP_URL'];
 
-        return view('public.product', compact('meta_title','meta_description','meta_keywords', 'producto', 'productos', 'atributos', 'valorAtributo', 'ProdComplementarios', 'productosConGalerias', 'especificaciones', 'url_env', 'colors'));
+        return view('public.product', compact('textoproducto','meta_title','meta_description','meta_keywords', 'producto', 'productos', 'atributos', 'valorAtributo', 'ProdComplementarios', 'productosConGalerias', 'especificaciones', 'url_env', 'colors'));
     }
 
     public function liquidacion()
