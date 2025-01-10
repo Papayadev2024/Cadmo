@@ -109,7 +109,7 @@
         <!-- Modal body -->
         <div class="p-4 ">
             <h1 class="font-boldDisplay text-2xl">Politicas de privacidad</h1>
-            <p class="font-Inter_Regular p-2">{!! $politicDev->content ?? '' !!}</p>
+            <p class="font-Inter_Regular p-2 prose">{!! $politicDev->content ?? '' !!}</p>
         </div>
     </div>
 
