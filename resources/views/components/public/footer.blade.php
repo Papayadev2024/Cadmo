@@ -5,6 +5,9 @@
         overflow-y: auto;
         /* Permite el desplazamiento vertical si el contenido excede la altura del modal */
     }
+    .blocker{
+            z-index: 999!important;
+    }
 </style>
 <footer class="bg-[#11355a]">
     <div class="grid grid-cols-1 w-full px-[5%] lg:px-[10%] py-10 lg:py-16 gap-10 md:gap-5">
